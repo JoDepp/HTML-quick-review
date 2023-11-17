@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanilla Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+  <header class="page-header">
+    <h1>This is the header area</h1>
+  </header>
+  <body>
+    <p>horizontal rule</p>
+    <hr />
+    <p>
+      Ids are generally used to select elements from JavaScript and can only be
+      used once. Name your ids using clear English words. If you want an id name
+      to include multiple words, separate each word with a hyphen -. If you want
+      to use multiple id names, use a space in between. Id names should be
+      lowercased. Ex:
+      <a href="https://www.shecodes.io/" id="website-link">SheCodes</a>
+    </p>
+    <section>A section and a Div are generally the same.</section>
+    <p>A form adds a form to your page</p>
+    <form action="/submit">
+      <label for="name">Enter your name: </label>
+      <input type="text" name="name" id="name" required />
+      <label for="email">Enter your email: </label>
+      <input type="email" name="email" id="email" required />
+      <input type="submit" value="Subscribe!" />
+    </form>
+    <label for="name">Name (4 to 8 characters):</label>
+    <input type="text" id="name" />
+    <p>
+      The above creates an input field, it is self closing
+      <input type="text" id="name" />
+    </p>
+    <p>Here's code for a button</p>
+    <button class="signup-button">
+      Sign up now
+    </button>
+    <p>Radio Input below↓</p>
+    <label>What pets do you have?</label>
+    <input type="radio" name="pet" id="cats" value="cats" checked />
+    <label for="cats">Cats</label>
+    <input type="radio" name="pet" id="dogs" value="dogs" />
+    <label for="dogs">Dogs</label>
+    <input type="radio" name="pet" id="frogs" value="frogs" />
+    <label for="frogs">Frogs</label>
+    <p>Checkbox Inputs</p>
+    <label>What pets do you have?</label>
+    <div>
+      <input type="checkbox" name="pets" id="fish" value="fish" />
+      <label for="fish">Fish</label>
+    </div>
+    <div>
+      <input type="checkbox" name="pets" id="dogs" value="dogs" />
+      <label for="dogs">Dogs</label>
+    </div>
+    <div>
+      <input type="checkbox" name="pets" id="frogs" value="frogs" />
+      <label for="frogs">Frogs</label>
+    </div>
+
+    <p>Select Element</p>
+    <label for="countries">Which country would you like to travel to?</label>
+    <select id="countries">
+      <option value="">Select a country</option>
+      <option value="france">France</option>
+      <option value="italy">Italy</option>
+      <option value="usa">USA</option>
+      <option value="brazil">Brazil</option>
+      <option value="japan">Japan</option>
+    </select>
+    <p>
+      Your title at the top in head is part of the SEO, it's alo what will be
+      shown in the browers title bar. Your meta description will also show up in
+      searches.
+    </p>
+    <p>Code for a Table!</p>
+    <table>
+      <thead>
+        <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Nationality</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Jody</td>
+          <td>Depp</td>
+          <td>French</td>
+        </tr>
+        <tr>
+          <td>Caleb</td>
+          <td>Depp</td>
+          <td>American</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>Your various heading sizes</p>
+    <h1>
+      You're Awesome - only 1 h1 per web page
+    </h1>
+    <h2>
+      You're Awesome
+    </h2>
+    <h3>
+      You're Awesome
+    </h3>
+    <h4>
+      You're Awesome
+    </h4>
+    <h5>
+      You're Awesome
+    </h5>
+    <h6>
+      You're Awesome
+    </h6>
+    <p>UL and LI, with a nested listed</p>
+    <ul>
+      <li>SheCodes Basics</li>
+      <li>SheCodes Plus</li>
+      <li>
+        <strong>SheCodes Pro</strong>
+        <br />
+        <ul>
+          <li>SheCodes Basics</li>
+          <li>SheCodes Plus</li>
+          <li>SheCodes Responsive</li>
+          <li>SheCodes React</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p>Links</p>
+    <a href="https://www.shecodes.io/">SheCodes</a>
+    <a href="https://www.shecodes.io/" target="_blank">SheCodes</a>
+    <a href="https://www.shecodes.io/" target="_blank" title="SheCodes Website"
+      >SheCodes</a
+    >
+
+    <p>Send an email link</p>
+    <a href="mailto:jodydepp@gmail.com">Send us an email</a>
+    <div id="app"></div>
+    <p>Anchor Links to a section on the same page</p>
+    <a href="#important">
+      Jump to the heading below
+    </a>
+
+    <div id="important">
+      This is a note
+    </div>
+
+    <p>Image Tag</p>
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/182/original/cat.png?1685030491"
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/182/original/cat.png?1685030491"
+      alt="Image description"
+    />
+    <img
+      src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/083/182/original/cat.png?1685030491"
+      alt="Image description"
+      width="400"
+    />
+
+    <p>Video links</p>
+    <video src="https://video-url"></video>
+    <video src="https://video-url" controls></video>
+
+    <p>Using strong makes text bold</p>
+    <strong>She can and she will</strong>
+
+    <p>using small makes words smaller</p>
+    <small>Imposter syndrom</small>
+    <em>em makes it italic</em>
+
+    <p>Internal CSS</p>
+    <head>
+      <style>
+        body {
+          background: #f8f5ff;
+        }
+
+        h1 {
+          color: purple;
+          text-align: center;
+        }
+      </style>
+    </head>
+
+    <p>External CSS-the way I do</p>
+    <head>
+      <link rel="stylesheet" href="./styles.css" />
+    </head>
+
+    <p>Internal JS</p>
+    <body>
+      <h1>
+        SheCodes
+      </h1>
+      <script>
+        alert("Hello SheCodes");
+      </script>
+    </body>
+
+    <p>External JS- how I do</p>
+    <body>
+      <h1>
+        Jody Rocks
+      </h1>
+      <script src="app.js"></script>
+    </body>
+
+    <script src="./index.mjs" type="module"></script>
+  </body>
+</html>
